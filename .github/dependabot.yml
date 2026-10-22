@@ -8,6 +8,9 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    allow:
+      # Update transitive dependencies too.
+      - dependency-type: "all"
     open-pull-requests-limit: 20
     ignore:
       - dependency-name: "schemars"
